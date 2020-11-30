@@ -1,0 +1,32 @@
+spring:
+  # 激活环境配置
+  profiles:
+    active: dev
+edith:
+  file:
+    # 文件服务域名
+    domain: http://localhost:9000/
+    # 排除文件类型
+    exclude:
+    # 包括文件类型
+    include:
+      - .jpg
+      - .png
+      - .jpeg
+    # 文件最大数量
+    nums: 10
+    # 服务器文件路径
+    serve-path: assets/**
+    # 单个文件最大体积
+    single-limit: 2MB
+    # 本地文件保存位置
+    store-dir: assets/
+  cms:
+    # 开启行为日志记录（logger）
+    logger-enabled: true
+    # access token 过期时间，3600s 一个小时
+    token-access-expire: 3600
+    # refresh token 过期时间，2592000s 一个月
+    token-refresh-expire: 2592000
+    # 令牌 secret
+    token-secret: x88Wf0441079889x8796a0Ac68f9ecJJU17c5Vbe8beod7d8d3e695*4

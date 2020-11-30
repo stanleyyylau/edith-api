@@ -1,0 +1,19 @@
+#开发环境配置
+
+server:
+  # 服务端口
+  port: 9009
+
+
+spring:
+  # 数据源配置，请修改为你项目的实际配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: root
+    url: jdbc:mysql://localhost:3306/anton_shop_edith?useSSL=false&serverTimezone=UTC&characterEncoding=UTF8
+    username: root
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
